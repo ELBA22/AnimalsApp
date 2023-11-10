@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Pais
+    public class Pais :BaseEntity
     {
+        public string NombrePais {get; set;}
+        public ICollection<Departamento> Departamentos {get; set;}
         
     }
 }

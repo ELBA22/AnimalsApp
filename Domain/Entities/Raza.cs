@@ -5,8 +5,13 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Raza
+    public class Raza :BaseEntity
     {
+        public string NombreRaza {get; set;}
+
+        public ICollection<Mascota> Mascotas {get; set;}
+        
+
         
     }
 }
