@@ -17,6 +17,10 @@ namespace Domain.Interfaces
         IPais Paises {get;}
         IRaza Razas {get;}
         IServicio Servicios {get;}
+        IRefreshToken RefreshTokens {get;}
+
+        IRol Rols {get;}
+        IUser Users {get;}
         Task<int> SaveAsync();
     }
 }

@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration.UserSecrets;
 
 namespace Persistence.Data
 {
@@ -22,6 +23,9 @@ namespace Persistence.Data
         public DbSet<Mascota> Mascotas { get; set; }
         public DbSet<Raza> Razas { get; set; }
         public DbSet<Servicio> Servicios { get; set; }
+        public DbSet<Rol> Rols {get; set;}
+        public DbSet<User> Users {get; set;}
+        public DbSet<UserRol> UserRols {get; set;} 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
