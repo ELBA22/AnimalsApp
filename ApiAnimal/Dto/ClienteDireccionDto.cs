@@ -7,6 +7,7 @@ namespace ApiAnimal.Dto
 {
     public class ClienteDireccionDto
     {
+        public int Id { get; set; }
         public string TipoDeVia {get; set;}
         public int NumeroPri { get; set; }
         public string Letra { get; set; }
